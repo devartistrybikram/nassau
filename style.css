@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'FuturaStd';
+    src: url('./futura-std.otf');
+    /* font-family: 'CustomFont', sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+}
+
+:root {
+    font-family: "Open Sans", sans-serif;
+}
+img {
+    max-width: 100%;
+}
+h1.title {
+    color: #F05223 !important;
+    font-family: "FuturaStd", sans-serif;
+}
+a {
+    color: #F05223 !important;
+    text-decoration: none !important;
+}
+.hero {
+    overflow: hidden;
+    z-index: 1;
+    img {
+        scale: 1.15;
+        height: 650px;
+        width: 100% !important;
+    }
+    .blur {
+        filter: blur(10px);
+    }
+    .butterflies {
+        z-index: 15;
+        max-width: 100px;
+        height: auto;
+        bottom: 30px;
+        left: 10px;
+    }
+    .texts {
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        z-index: 15;
+        color: #fff;
+        .big {
+            font-size: 4rem;
+            line-height: .9;
+            letter-spacing: 6px;
+        }
+        .before {
+            max-width: 65px;
+            height: auto;
+            left: 40px;
+            top: -20px;
+            transform: translate(-50%, -50%);
+        }
+        .margin {
+            margin-left: 100px;
+        }
+        .imgtext {
+            background: url('./images/layer.png');
+            background-size: contain;
+            background-repeat: repeat;
+            color: #fff;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            padding: 0;
+        }
+    }
+    .container-fluid::after {
+        content: ' ';
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        background: linear-gradient(200deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0.15) 100%);
+    }
+}
+
+.navbar {
+    .logo {
+        max-width: 170px;
+    }
+    .nav-link {
+        color: #fff !important;
+    }
+    .nav-link.active {
+        background-color: #F05223 !important;
+        border-radius: 10px;
+    }
+}
+
+.offcanvas {
+    a {
+        color: #aaa !important;
+    }
+    a.active {
+        color: #F05223 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        color: #fff;
+        .logo {
+            max-width: 80px !important;
+        }
+    }
+    .offcanvas img {
+        max-width: 80px;
+    }
+    .hero {
+        img:nth-child(2) {
+            display: none !important;
+        }
+    }
+}
+
+.gallery {
+    .container {
+        .container {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            column-gap: 16px;
+        }
+    }
+    .bee {
+        top: -90px;
+        right: -100px;
+    }
+}
+@media (max-width: 760px) {
+    .gallery {
+        .container {
+            .container {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+            }
+        }
+    }
+}
+
+.testimonial {
+    height: auto;
+    overflow: hidden;
+    .image {
+        mix-blend-mode: multiply;
+        z-index: 0;
+        left: -10%;
+        bottom: -40%;
+        opacity: .5;
+        scale: .9;
+    }
+    .card {
+        img {
+            max-width: 70px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+        }
+        p {
+            height: auto;
+            z-index: 1;
+        }
+        p::after, p::before {
+            content: '"';
+            position: absolute;
+            font-size: 60px !important;
+            font-family: "Passion One", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            z-index: -1;
+            color: #ddd;
+            line-height: .5;
+        }
+        p::before {
+            left: 0;
+            top: -40%;
+            transform: translate(-50%, -50%);
+            transform: translateY(-50%);
+            rotate: 180deg;
+        }
+        p::after {
+            right: 0;
+            bottom: 20px;
+            transform: translate(-50, -50%);
+            transform: translateY(100%);
+        }
+    }
+}
+
+.blog {
+    position: relative;
+    .card {
+        img {
+            max-width: 150px;
+            aspect-ratio: 1;
+        }
+        .bee {
+            max-width: 50px;
+            top: 40px;
+            right: -2%;
+        }
+    }
+}
+
+.blog::after {
+    content: ' ';
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    height: 240px;
+    border: 1px solid rebeccapurple;
+    /* background: #402f1d ; */
+    background: #402f1d url('./images/back.png') no-repeat center / 110%;
+    z-index: -1;
+}
+
+.contact {
+    input {
+        width: 100%;
+        padding: 10px;
+        background-color: #FFF;
+    }
+    input:focus {
+        outline: 1px solid #ddd;
+    }
+    
+    button {
+        background-color: #F05223;
+        color: #fff;
+        outline: none;
+        border: 0;
+    }
+
+}
+footer {
+    border-bottom: 20px solid #402f1d;
+    .menus a {
+        display: inline-block;
+        margin: 10px;
+    }
+    .back {
+        bottom: -32%;
+        z-index: -1;
+    }
+    .social {
+        margin: 10px auto 25px auto;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        a {
+            display: grid;
+            place-items: center;
+            width: 35px;
+            height: 35px;
+            margin: 0 5px;
+            border: 2px solid #F05223;
+        }
+    }
+    .social::before,
+    .social::after {
+        display: inline-block;
+        content: "";
+        border-top: 2px solid black;
+        width: 35%;
+        margin: 0 1rem;
+        transform: translateY(-1rem);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        .social::before,
+        .social::after {
+            width: 20%;
+        }
+    }
+}

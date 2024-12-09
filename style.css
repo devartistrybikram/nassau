@@ -105,7 +105,13 @@ a {
 
 .offcanvas {
     a {
+        display: block;
+        border: 1px solid #402f1d;
+        width: 100%;
         color: #aaa !important;
+    }
+    a:hover {
+        color: #212a2a !important;
     }
     a.active {
         color: #F05223 !important;

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+<body class="bg-light">
+    <!-- Section Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container pt-lg-3">
+                <a class="navbar-brand pt-lg-3" href="#">
+                    <img src="./logo.png" alt="Logo" class="logo d-inline-block align-text-top">
+                </a>
+                <div class="d-lg-none text-center p-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </div>
+                <div class="navbar-nav ms-auto d-none d-lg-flex align-self-start pt-lg-3">
+                    <a class="nav-link px-lg-3 active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link px-lg-3" href="#">About Us</a>
+                    <a class="nav-link px-lg-3" href="#">Gallery</a>
+                    <a class="nav-link px-lg-3" href="#">Testimonials</a>
+                    <a class="nav-link px-lg-3" href="#">Blogs</a>
+                    <a class="nav-link px-lg-3" href="#">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header" style="box-shadow: 0 10px 10px -10px rgba(170, 180, 150, 0.25);">
+            <div class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="./logo.png" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="d-flexflex-column p-0" style="list-style: none;">
+                <li class="p-2 mb-3"><a href="#" class="active">Home</a></li>
+                <li class="p-2 mb-3"><a href="#">About Us</a></li>
+                <li class="p-2 mb-3"><a href="#">Gallery</a></li>
+                <li class="p-2 mb-3"><a href="#">Testimonials</a></li>
+                <li class="p-2 mb-3"><a href="#">Blogs</a></li>
+                <li class="p-2 mb-3"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section Hero -->
+    <section class="sec hero position-relative">
+        <img src="./elements/butterflies.png" alt="" class="butterflies position-absolute">
+        <div class="container-fluid position-relative">
+            <div class="position-absolute texts">
+                <span class="fs-1 fw-bold margin">FLORIDA</span><br/>
+                <span class="big-letter margin fw-bold position-relative" style="line-height: .5;">
+                    <span class="imgtext">NAT</span>IVE
+                </span><br/>
+                <span class="big-word lh-sm imgtext position-relative" style="line-height: .5;">
+                    ECOSCAPES
+                    <img src="./elements/bee.png" alt="" class="bee before position-absolute">
+                </span>
+                <p class="fs-5 mt-3">that are beneficial to both the<br/>client and native wildlife.</p>
+                <a href="#" id="" class="fw-normal fs-6"> Contact Us <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img src="./images/hero1.jpg" alt="" class="blur">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="./images/hero2.jpg" alt="" class="d-none d-lg-inline">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section class="sec about py-4">
+        <div class="container">
+            <div class="row p-3 py-md-5">
+                <div class="col-12 col-md-6">
+                    <h1 class="fs-1 fw-bold lh-1 title">About US</h1>
+                    <h2 class="fs-4 fw-normal">Hi! My name is Ashley, founder and owner of Nassau for Nature.</h2>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="fs-6 mb-2">I was raised on the rural west side of the county, and have lived in Nassau the majority of my life. I grew up on a farm and developed a deep love for nature and the outdoors as a child.</p>
+                    <a href="#" id="" class="fw-normal fs-5"> Read More <i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Gallery -->
+    <section class="sec gallery py-4 position-relative" style="background-color: #fef9ec;">
+        <img src="./elements/beeleft.png" alt="" class="bee position-absolute translate-middle" style="scale: .65;">
+        <div class="container p-3 py-md-5">
+            <h1 class="text-center fs-1 fw-bold lh-1 title">Gallery</h1>
+            <p class="text-center fs-5">Landscaping Projects and Plant Pictures</p>
+            <div class="container" id="gallery">
+                <div class="images"><img src="./images/slider1.jpg" alt=""></div>
+                <div class="images mt-3"><img src="./images/slider2.jpg" alt=""></div>
+                <div class="images mt-3"><img src="./images/slider3.jpg" alt=""></div>
+                <div class="images mt-3"><img src="./images/slider4.jpg" alt=""></div>
+                <div class="images mt-3"><img src="./images/slider5.jpg" alt=""></div>
+                <div class="images mt-3"><img src="./images/slider6.jpg" alt=""></div>
+            </div>
+            <a href="#" id="load" class="mt-3 mt-lg-5 d-block text-center" onclick="return false;"> Load More <i class="fa-solid fa-circle-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Section Testimonial -->
+    <section class="sec testimonial py-5 position-relative" style="background-color: #04763c;">
+        <img src="./elements/leafbig.png" alt="" class="image position-absolute">
+        <div class="container p-3 py-md-5" style="z-index: 515;">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h1 class="title" style="color: #fff !important;">Testimonials</h1>
+                    <p class="fs-6 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>        
+                    <a href="#" id=""><span class="text-light">Read More</span> <i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="card p-4 text-center">
+                                <img src="./images/user1.jpg" alt="" class="mx-auto mb-2">
+                                <p class="text-center position-relative">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor adipiscing elit, sed do eiusmod</p>
+                                <strong class="">Lorem ipsum</strong>
+                                <span class="fs-6 mt-2">dolor sit, consectetur</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="card p-4 text-center">
+                                <img src="./images/user2.jpg" alt="" class="mx-auto mb-2">
+                                <p class="text-center position-relative">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor adipiscing elit, sed do eiusmod</p>
+                                <strong class="">Lorem ipsum</strong>
+                                <span class="fs-6 mt-2">dolor sit, consectetur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Blog -->
+    <section class="sec py-5 blog">
+        <div class="container p-3 py-md-5">
+            <h1 class="text-center fs-1 fw-bold lh-1 title">Blogs</h1>
+            <p class="text-center fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="row">
+                <div class="col-12 col-lg-6 p-1">
+                    <div class="card p-3">
+                        <div class="d-flex position-relative">
+                            <img src="./images/blog1.png" alt="">
+                            <div class="ps-2">
+                                <span class="d-flex">22082024</span>
+                                <strong>Lorem ipsum dolor sit</strong>
+                                <p class="fs-6">consectetur adipiscing elit, eiusmod tempor adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <a href="#" id="" class="fw-medium"> Read More... </a></p>
+                            </div>
+                        </div>
+                        <img src="./elements/beeleft.png" alt="" class="bee position-absolute translate-middle">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-1">
+                    <div class="card p-3">
+                        <div class="d-flex position-relative">
+                            <img src="./images/blog2.png" alt="">
+                            <div class="ps-2">
+                                <span class="d-flex">22082024</span>
+                                <strong>Lorem ipsum dolor sit</strong>
+                                <p class="fs-6">consectetur adipiscing elit, eiusmod tempor adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/> <a href="#" id="" class="fw-medium"> Read More... </a></p>
+                            </div>
+                        </div>
+                        <img src="./elements/beeleft.png" alt="" class="bee position-absolute translate-middle">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" id="" class=""><span class="text-light">Read More</span> <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="sec py-5 contact position-relative">
+        <img src="./elements/butterfly.png" alt="" class="butterfly position-absolute top-0 end-0 translate-middle">
+        <div class="container p-3 py-md-5 mt-4">
+            <div class="row mt-5">
+                <div class="col-12 col-lg-4">
+                    <h1 class="fs-1 fw-bold lh-1 title">Contact Us</h1>
+                    <p class="fs-5">Lorem ipsum dolor sit amet,<br/>adipiscing elit, sed do</p>
+                </div>
+                <div class="col-12 col-lg-8 row align-items-end">
+                    <div class="col-12 col-lg-10">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 p-1">
+                                <input type="text" name="" id="" placeholder="Name" class="border" />
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 p-1">
+                                <input type="text" name="" id="" placeholder="Email" class="border" />
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 p-1">
+                                <input type="text" name="" id="" placeholder="Phone" class="border" />
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-12 p-1">
+                                <input type="text" name="" id="" placeholder="Message" class="border" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 mt-2 p-1">
+                        <button type="button" class="px-4 py-2 rounded">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="py-5 position-relative">
+        <img src="./elements/leaf.png" alt="" class="back position-absolute start-0 translate-middle">
+        <p class="social">
+            <a href="#" class="rounded-circle"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="rounded-circle"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+        </p>
+        <p class="text-center menus">
+            <a href="#" class="link">Home</a>
+            <a href="#" class="link">About Us</a>
+            <a href="#" class="link">Gallery</a>
+            <a href="#" class="link">Testimonials</a>
+            <a href="#" class="link">Blogs</a>
+            <a href="#" class="link">Contact Us</a>
+        </p>
+        <p class="text-center">Copyright © 2024 Nassau for Nature. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -21,11 +21,7 @@ a {
     color: #F05223 !important;
     text-decoration: none !important;
 }
-/* .header.scrolled {
-    .navbar {
-        background-color: #ddd !important;
-    }
-} */
+
 .hero {
     overflow: hidden;
     z-index: 1;

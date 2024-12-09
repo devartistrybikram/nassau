@@ -112,48 +112,6 @@ a {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    header {
-        color: #fff;
-        .logo {
-            max-width: 80px !important;
-        }
-    }
-    .offcanvas img {
-        max-width: 80px;
-    }
-    .hero {
-        img:nth-child(2) {
-            display: none !important;
-        }
-        .texts {
-            top: 50%;
-            left: 50%;
-            .big-letter {
-                font-size: 4rem;
-                line-height: .9;
-                letter-spacing: 6px;
-            }
-            .big-word {
-                font-size: 3rem;
-                letter-spacing: 0px;
-            }
-            .margin {
-                margin-left: 50px;
-            }
-        }  
-    }
-    footer {
-        .social::before,
-        .social::after {
-            width: 20%;
-        }
-    }
-    .back, .bee, .butterflies {
-        display: none !important;
-    }
-}
-
 .gallery {
     .container {
         .container {
@@ -168,6 +126,7 @@ a {
         right: -100px;
     }
 }
+
 @media (max-width: 760px) {
     .gallery {
         .container {
@@ -273,6 +232,7 @@ a {
     }
 
 }
+
 footer {
     border-bottom: 20px solid #402f1d;
     .menus a {
@@ -307,6 +267,48 @@ footer {
         width: 35%;
         margin: 0 1rem;
         transform: translateY(-1rem);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        color: #fff;
+        .logo {
+            max-width: 80px !important;
+        }
+    }
+    .offcanvas img {
+        max-width: 80px;
+    }
+    .hero {
+        img:nth-child(2) {
+            display: none !important;
+        }
+        .texts {
+            top: 50%;
+            left: 50%;
+            .big-letter {
+                font-size: 4rem;
+                line-height: .9;
+                letter-spacing: 6px;
+            }
+            .big-word {
+                font-size: 3rem;
+                letter-spacing: 0px;
+            }
+            .margin {
+                margin-left: 50px;
+            }
+        }  
+    }
+    footer {
+        .social::before,
+        .social::after {
+            width: 20%;
+        }
+    }
+    .butterfly, .back, .bee, .butterflies {
+        display: none !important;
     }
 }
 /* 
